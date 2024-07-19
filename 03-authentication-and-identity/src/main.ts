@@ -1,21 +1,22 @@
-import { importProvidersFrom } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+
 
 import { AuthModule } from 'angular-auth-oidc-client';
 
 import { AppComponent } from './app/app.component';
 import { HomeComponent } from './app/home/home.component';
+import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
+import { importProvidersFrom } from '@angular/core';
+import { provideRouter } from '@angular/router';
 
 
 bootstrapApplication(AppComponent, {
     providers: [
         importProvidersFrom(BrowserModule, AuthModule.forRoot({
             config: {
-                authority: 'your issuer', // Enter Issuer
+                authority: 'https://dev-5tvczcmwqvvra5o7.eu.auth0.com', // Enter Issuer
                 redirectUrl: `${window.location.origin}`,
                 postLogoutRedirectUri: window.location.origin,
-                clientId: 'your client id', // Enter ClientID
+                clientId: 'uc4faxGnyaRNvIhsokbPPAunDkGWDutG', // Enter ClientID
                 scope: 'openid profile offline_access',
                 responseType: 'code',
                 silentRenew: true,

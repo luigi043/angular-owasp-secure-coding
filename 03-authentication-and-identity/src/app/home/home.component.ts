@@ -1,7 +1,8 @@
-import { Component, inject } from '@angular/core';
+
 import { UserDataResult, AuthenticatedResult, OidcSecurityService } from 'angular-auth-oidc-client';
 import { Observable, map } from 'rxjs';
 import { NgIf, AsyncPipe, JsonPipe } from '@angular/common';
+import { Component, inject } from '@angular/core';
 
 @Component({
     selector: 'app-home',

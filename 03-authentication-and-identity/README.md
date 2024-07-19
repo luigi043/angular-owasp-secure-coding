@@ -1,5 +1,5 @@
 # 03AuthenticationAndIdentityManagement
-
+![image](https://github.com/user-attachments/assets/71601be9-b525-46c5-9c6c-8e0cbddcea99)
 This project demonstrates the Authentication and Identity Management module code.
 
 ## Pre-requisites

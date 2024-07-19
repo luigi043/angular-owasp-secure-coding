@@ -23,7 +23,7 @@ export class BuildDomComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const dom = '<a href="javascript:alert(\'danger!\')">Danger ahead</a>';
 
-    // this.el.nativeElement.innerHTML = dom;
+    //this.el.nativeElement.innerHTML = dom;
     this.renderer.setProperty(this.el.nativeElement, 'innerHTML', dom);
 
     // add explicit sanitization

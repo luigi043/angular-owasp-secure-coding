@@ -18,6 +18,7 @@ export class BypassComponent implements OnInit {
   private sanitizer: DomSanitizer = inject(DomSanitizer);
   private readonly videoHost = 'https://www.youtube.com/embed/';
   bypassSecurityVideoLink!: SafeResourceUrl;
+  
 
   ngOnInit(): void {
     const videoId = 'uu7o6hEswVQ';
